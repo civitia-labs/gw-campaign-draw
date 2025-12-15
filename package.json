@@ -1,0 +1,23 @@
+{
+  "name": "gw-campaign-draw",
+  "version": "1.0.0",
+  "description": "Verifiable prize draw for the Ghost Wallet Campaign using NIST Randomness Beacon",
+  "main": "draw.ts",
+  "scripts": {
+    "draw": "npx ts-node draw.ts",
+    "verify": "npx ts-node draw.ts snapshot.csv draw_results.csv"
+  },
+  "dependencies": {
+    "csv-parse": "^5.5.6",
+    "csv-stringify": "^6.5.1"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.7.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
+
