@@ -70,20 +70,13 @@ cd gw-campaign-draw
 npm install
 
 # 3. Run the draw with the official NIST timestamp
-npx ts-node draw.ts snapshot.csv my_results.csv <NIST_UNIX_TIMESTAMP>
+npx ts-node draw.ts snapshot.csv my_results.csv 1765881000000
 
 # 4. Compare your results with the published draw_results.csv
 diff my_results.csv draw_results.csv
 ```
 
 If the diff shows no differences, the draw was conducted fairly.
-
-### Example
-
-```bash
-# Using Unix timestamp 1734307200 (example)
-npx ts-node draw.ts snapshot.csv my_results.csv 1734307200
-```
 
 ---
 
@@ -92,10 +85,10 @@ npx ts-node draw.ts snapshot.csv my_results.csv 1734307200
 | Parameter | Value |
 |-----------|-------|
 | Snapshot File | `snapshot.csv` |
-| NIST Beacon Timestamp | **`<TO_BE_ANNOUNCED>`** |
+| NIST Beacon Timestamp | `1765881000000` (Tuesday, December 16, 2025 10:30:00 AM GMT) |
 | Results File | `draw_results.csv` |
 
-> **Note:** The NIST timestamp will be announced publicly before the draw and added to this README afterward.
+> **Note:** The NIST beacon timestamp is chosen to be after the snapshot has been taken, and is made public before the draw. This ensures the randomness could not influence or alter the participant list.
 
 ---
 

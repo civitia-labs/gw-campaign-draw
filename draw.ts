@@ -237,8 +237,7 @@ function printSummary(
 async function main() {
   const inputPath = process.argv[2] || 'snapshot.csv';
   const outputPath = process.argv[3] || 'draw_results.csv';
-  // Default to current time if not specified (for testing)
-  const unixTime = process.argv[4] ? parseInt(process.argv[4]) : Math.floor(Date.now() / 1000);
+  const unixTime = process.argv[4] ? parseInt(process.argv[4]) : 1765881000000;
 
   console.log(`Input file: ${inputPath}`);
   console.log(`Output file: ${outputPath}`);
